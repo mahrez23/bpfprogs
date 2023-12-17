@@ -85,7 +85,7 @@ int ignore_kprobe__bio_endio(void *ctx)
 
 """
 
-# Load the BPF program
+#Loading
 b = BPF(text=bpf_text)
 
 b.attach_kprobe(event="vfs_read", fn_name="function_vfs_read")
