@@ -84,7 +84,7 @@ int ignore_kprobe__bio_endio(void *ctx)
 }
 
 """
-
+#bpf prog
 #Loading
 b = BPF(text=bpf_text)
 
