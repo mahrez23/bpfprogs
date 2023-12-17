@@ -53,8 +53,8 @@ int kprobe__submit_bio(void *ctx)
 
 
 """
-# Goodbye
 
+# hello
 b = BPF(text=bpf_text)
 
 b.attach_kprobe(event="vfs_read", fn_name="function_vfs_read")
